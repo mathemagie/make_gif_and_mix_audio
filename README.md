@@ -1,1 +1,7 @@
-![40](https://github.com/mathemagie/make_gif_and_mix_audio/assets/180781/1f1ea3b5-48f9-4b9e-a87c-384af3aff05f)
+# How to Use make_gif.sh and mix_mp3_and_gif.sh
+
+## make_gif.sh
+
+This script creates a GIF from all PNG files in the current directory.
+
+### Usage

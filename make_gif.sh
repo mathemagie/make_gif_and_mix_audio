@@ -23,7 +23,7 @@ fi
 echo "Creating GIF with frame duration: $FRAME_DURATION"
 
 # Create the GIF from all PNG files in the current directory
-if ! convert -delay "$FRAME_DURATION" -loop 0 *.png "$OUTPUT"; then
+if ! convert -delay "$FRAME_DURATION" -loop 0 1/*.png "$OUTPUT"; then
     echo "Error: Failed to create GIF."
     exit 1
 fi
