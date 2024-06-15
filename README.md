@@ -24,9 +24,23 @@ sh ./make_gif.sh animation.gif 10 images
 # mix_mp3_and_gif.sh
 
 ## Description
-This script combines an MP3 audio file and a GIF image into an MP4 video file using `ffmpeg`. The output file is named with the current date and time appended to the provided output filename.
+
+`mix_mp3_and_gif.sh` is a Bash script that combines an MP3 audio file and a GIF image into an MP4 video file using `ffmpeg`. The output file is named with the current date and time appended to the provided output filename.
+
+## Prerequisites
+
+- [ffmpeg](https://ffmpeg.org/) must be installed on your system.
 
 ## Usage
 
-To combine an MP3 audio file and a GIF image into an MP4 video file, use the following command:
+sh ./mix_mp3_and_gif.sh input.mp3 input.gif output.mp4
 
+- `input.mp3`: The MP3 audio file to be combined with the GIF.
+- `input.gif`: The GIF image file to be combined with the MP3.
+- `output.mp4`: The name of the output MP4 video file.
+
+## Example
+
+To create an MP4 video named `output.mp4` from `audio.mp3` and `animation.gif`:
+
+sh ./mix_mp3_and_gif.sh audio.mp3 animation.gif output.mp4
