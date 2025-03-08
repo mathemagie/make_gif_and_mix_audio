@@ -1,4 +1,20 @@
+# Image to GIF/Video Conversion Tools
+
+A collection of bash scripts to create GIFs from images and combine them with audio.
 [Complete example with images and sound track](#complete-example-creating-a-gif-with-sound)
+
+## Tools Included
+
+- [`make_gif.sh`](#make_gifsh) - Create GIFs from PNG images
+- [`mix_mp3_and_gif.sh`](#mix_mp3_and_gifsh) - Combine GIF and MP3 into MP4
+
+## Prerequisites
+
+Before using these tools, ensure you have the following installed:
+
+- [ImageMagick](https://imagemagick.org/index.php) - For GIF creation
+- [FFmpeg](https://ffmpeg.org/) - For combining audio and GIF
+
 
 # make_gif.sh
 
@@ -11,12 +27,15 @@
 ## Usage
 
 ```bash
-./make_gif.sh output.gif frame_duration input_directory
+./make_gif.sh <output-name>.gif <frame-duration> <images-folder>
 ```
 
-- `output.gif`: The name of the output GIF file.
-- `frame_duration`: The duration of each frame in the GIF, specified in ticks (1 tick = 1/100th of a second).
-- `input_directory`: The directory containing the PNG files to be used for creating the GIF.
+#### Parameters Explained
+| Parameter | Description | Example |
+|-----------|-------------|----------|
+| output-name.gif | Name for your GIF file | `ocean.gif` |
+| frame-duration | How long each frame shows (in 1/100th seconds) | `50` = 0.5 seconds |
+| images-folder | Folder containing your PNG images | `images` |
 
 ## Example
 
@@ -41,12 +60,15 @@ To create a GIF named `animation.gif` with each frame lasting 10 ticks (0.1 seco
 ## Usage
 
 ```bash
-./mix_mp3_and_gif.sh input.mp3 input.gif output.mp4
+./mix_mp3_and_gif.sh <audio-file>.mp3 <gif-file>.gif <output-name>.mp4
 ```
 
-- `input.mp3`: The MP3 audio file to be combined with the GIF.
-- `input.gif`: The GIF image file to be combined with the MP3.
-- `output.mp4`: The name of the output MP4 video file.
+#### Parameters Explained
+| Parameter | Description | Example |
+|-----------|-------------|----------|
+| audio-file.mp3 | Your audio file | `ocean.mp3` |
+| gif-file.gif | Your animated GIF | `ocean.gif` |
+| output-name.mp4 | Name for final video | `final_video.mp4` |
 
 ## Example
 
@@ -57,23 +79,33 @@ To create an MP4 video named `output.mp4` from `audio.mp3` and `animation.gif`:
 ./mix_mp3_and_gif.sh audio.mp3 animation.gif output.mp4
 ```
 
-
+ 
 # Complete Example: Creating a GIF with Sound
 
 This example demonstrates how to create a GIF from multiple images and combine it with an audio file to create an MP4 video.
 
 ## Step 1: Prepare Your Files
 
-1. Create a directory called `images` and save these 4 images in it:
-- 1.png
-- 2.png 
-- 3.png
-- 4.png
+1. Create an `images` folder:
+   ```bash
+   mkdir images
+   ```
 
-![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_0](https://github.com/user-attachments/assets/68cc5886-8b19-4877-bae3-495eec800d7b)
-![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_1](https://github.com/user-attachments/assets/049d32a9-9fa7-44ad-ab67-84e83745a225)
-![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_2](https://github.com/user-attachments/assets/56208352-e416-4528-93f4-8b6189b613fd)
-![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_3](https://github.com/user-attachments/assets/bd9fab47-8b02-4681-b2e7-21553a0dc4ea)
+2. Add your PNG images to this folder:
+   - Name them sequentially (e.g., 1.png, 2.png, 3.png, 4.png)
+   - Ensure all images are the same size
+   - Use PNG format for best quality
+
+
+Example Images:
+<details>
+<summary>Click to see example images</summary>
+
+![Image 1](https://github.com/user-attachments/assets/68cc5886-8b19-4877-bae3-495eec800d7b)
+![Image 2](https://github.com/user-attachments/assets/049d32a9-9fa7-44ad-ab67-84e83745a225)
+![Image 3](https://github.com/user-attachments/assets/56208352-e416-4528-93f4-8b6189b613fd)
+![Image 4](https://github.com/user-attachments/assets/bd9fab47-8b02-4681-b2e7-21553a0dc4ea)
+</details>
 
 
 
@@ -81,13 +113,22 @@ This example demonstrates how to create a GIF from multiple images and combine i
 
 Run the following command to create a GIF with each frame lasting 0.5 seconds (50 ticks):
 
+1. Run the GIF creation script:
 ```bash
 ./make_gif.sh ocean.gif 50 images
 ```
 
+2. Check your GIF:
+   - It should appear in your current directory
+   - Open it to verify the animation
+
 This command creates a GIF file named 'ocean.gif' in your current directory.
 
+<details>
+<summary>Click to see example GIF</summary>
+
 ![ocean](https://github.com/user-attachments/assets/e6f10abb-8062-43d8-ba83-c0772b70917b)
+</details>
 
 
 ## Step 3: Combine Audio and GIF into MP4
