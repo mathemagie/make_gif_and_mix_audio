@@ -1,4 +1,4 @@
-Complete example with images and sound track at the bottom of the README file
+[Complete example with images and sound track](#complete-example-creating-a-gif-with-sound)
 
 # make_gif.sh
 
@@ -11,7 +11,7 @@ Complete example with images and sound track at the bottom of the README file
 ## Usage
 
 ```bash
-sh ./make_gif.sh output.gif frame_duration input_directory
+./make_gif.sh output.gif frame_duration input_directory
 ```
 
 - `output.gif`: The name of the output GIF file.
@@ -23,7 +23,7 @@ sh ./make_gif.sh output.gif frame_duration input_directory
 To create a GIF named `animation.gif` with each frame lasting 10 ticks (0.1 seconds) from the `images` directory:
 
 ```bash
-sh ./make_gif.sh animation.gif 10 images
+./make_gif.sh animation.gif 10 images
 ```
 
 
@@ -40,7 +40,9 @@ sh ./make_gif.sh animation.gif 10 images
 
 ## Usage
 
-sh ./mix_mp3_and_gif.sh input.mp3 input.gif output.mp4
+```bash
+./mix_mp3_and_gif.sh input.mp3 input.gif output.mp4
+```
 
 - `input.mp3`: The MP3 audio file to be combined with the GIF.
 - `input.gif`: The GIF image file to be combined with the MP3.
@@ -48,9 +50,12 @@ sh ./mix_mp3_and_gif.sh input.mp3 input.gif output.mp4
 
 ## Example
 
+
 To create an MP4 video named `output.mp4` from `audio.mp3` and `animation.gif`:
 
-sh ./mix_mp3_and_gif.sh audio.mp3 animation.gif output.mp4
+```bash
+./mix_mp3_and_gif.sh audio.mp3 animation.gif output.mp4
+```
 
 
 # Complete Example: Creating a GIF with Sound
@@ -77,21 +82,25 @@ This example demonstrates how to create a GIF from multiple images and combine i
 Run the following command to create a GIF with each frame lasting 0.5 seconds (50 ticks):
 
 ```bash
-sh ./make_gif.sh ocean.gif 50 images
+./make_gif.sh ocean.gif 50 images
 ```
 
+This command creates a GIF file named 'ocean.gif' in your current directory.
 
 ![ocean](https://github.com/user-attachments/assets/e6f10abb-8062-43d8-ba83-c0772b70917b)
 
 
-## Step 3: mix 
+## Step 3: Combine Audio and GIF into MP4
 
-2. Have your audio file `ocean.mp3` ready in your working directory
+1. Ensure you have the audio file `ocean.mp3` ready in your working directory (included in this repository)
+To generate this MP3 file, I used the Sound Effect feature of Eleven Labs with the prompt "sea ocean deep"
 
+https://elevenlabs.io/app/sound-effects/generate
 
-https://github.com/user-attachments/assets/0eb18e19-d7e4-4962-8d91-5b6c3bfd91a3
-
+2. Run the following command to combine the audio and GIF into an MP4 video:
 
 ```bash
 sh ./mix_mp3_and_gif.sh ocean.mp3 ocean.gif ocean.mp4
 ```
+
+https://github.com/user-attachments/assets/0eb18e19-d7e4-4962-8d91-5b6c3bfd91a3
