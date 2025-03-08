@@ -97,6 +97,9 @@ To generate this MP3 file, I used the Sound Effect feature of Eleven Labs with t
 
 https://elevenlabs.io/app/sound-effects/generate
 
+<img width="1061" alt="Screenshot 2025-03-08 at 17 51 36" src="https://github.com/user-attachments/assets/33f90baa-a345-4ff3-a44d-97969a471c00" />
+
+
 2. Run the following command to combine the audio and GIF into an MP4 video:
 
 ```bash
