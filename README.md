@@ -81,6 +81,9 @@ sh ./make_gif.sh animation.gif 50 images
 ```
 
 
+![ocean](https://github.com/user-attachments/assets/e6f10abb-8062-43d8-ba83-c0772b70917b)
+
+
 ## Step 3: mix 
 
 2. Have your audio file `ocean.mp3` ready in your working directory
