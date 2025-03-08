@@ -88,6 +88,10 @@ sh ./make_gif.sh ocean.gif 50 images
 
 2. Have your audio file `ocean.mp3` ready in your working directory
 
+
+https://github.com/user-attachments/assets/0eb18e19-d7e4-4962-8d91-5b6c3bfd91a3
+
+
 ```bash
 sh ./mix_mp3_and_gif.sh ocean.mp3 ocean.gif ocean.mp4
 ```
