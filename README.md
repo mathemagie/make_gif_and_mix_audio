@@ -1,3 +1,9 @@
+
+![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_0](https://github.com/user-attachments/assets/68cc5886-8b19-4877-bae3-495eec800d7b)
+![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_1](https://github.com/user-attachments/assets/049d32a9-9fa7-44ad-ab67-84e83745a225)
+![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_2](https://github.com/user-attachments/assets/56208352-e416-4528-93f4-8b6189b613fd)
+![mathemagie _macro_vivid_vibrant_primitive_beginnings_of_new_l_69c0ade5-a3e3-45fb-98d1-edc5c77dc63f_3](https://github.com/user-attachments/assets/bd9fab47-8b02-4681-b2e7-21553a0dc4ea)
+
 # make_gif.sh
 
 `make_gif.sh` is a simple Bash script to create a GIF from all PNG files in a specified directory using ImageMagick.
