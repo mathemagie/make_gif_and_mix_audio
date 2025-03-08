@@ -77,7 +77,7 @@ This example demonstrates how to create a GIF from multiple images and combine i
 Run the following command to create a GIF with each frame lasting 0.5 seconds (50 ticks):
 
 ```bash
-sh ./make_gif.sh animation.gif 50 images
+sh ./make_gif.sh ocean.gif 50 images
 ```
 
 
@@ -88,3 +88,6 @@ sh ./make_gif.sh animation.gif 50 images
 
 2. Have your audio file `ocean.mp3` ready in your working directory
 
+```bash
+sh ./mix_mp3_and_gif.sh ocean.mp3 ocean.gif ocean.mp4
+```
