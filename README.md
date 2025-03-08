@@ -103,7 +103,7 @@ https://elevenlabs.io/app/sound-effects/generate
 2. Run the following command to combine the audio and GIF into an MP4 video:
 
 ```bash
-sh ./mix_mp3_and_gif.sh ocean.mp3 ocean.gif ocean.mp4
+./mix_mp3_and_gif.sh ocean.mp3 ocean.gif ocean.mp4
 ```
 
 https://github.com/user-attachments/assets/0eb18e19-d7e4-4962-8d91-5b6c3bfd91a3
